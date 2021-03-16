@@ -43,9 +43,12 @@ $(document).ready(function(){
       eta: eta,
     }
     studenti.push(studente);
+    for (var key in studenti) {
+      $('#stampa').append(studenti[key].nome + ' ' + studenti[key].cognome +  ' ' + studenti[key].eta + '<br>');
+    }
   });
 
   console.log(studenti);
 
-  // var lista = ['Walter', 'Federico', 'Leonardo'];
+
 })
